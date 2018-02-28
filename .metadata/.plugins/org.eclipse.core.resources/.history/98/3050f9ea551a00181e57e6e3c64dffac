@@ -1,0 +1,19 @@
+package novidadesJava8;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class OrdenaStrings {
+	public static void main(String[] args) {
+		List<String> palavras = new ArrayList<String>();
+		
+		palavras.add("crossfit");
+		palavras.add("crossfit 40 graus");
+		palavras.add("crossfit open games ");
+		
+		Collections.sort(palavras);
+		System.out.println(palavras);
+		
+	}
+}

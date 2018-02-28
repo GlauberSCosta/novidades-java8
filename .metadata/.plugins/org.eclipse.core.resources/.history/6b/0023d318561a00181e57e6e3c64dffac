@@ -1,0 +1,35 @@
+package novidadesJava8;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+public class OrdenaStrings {
+	public static void main(String[] args) {
+		List<String> palavras = new ArrayList<String>();
+		
+		palavras.add("crossfit");
+		palavras.add("crossfit 40 graus");
+		palavras.add("crossfit open games ");
+		
+		Collections.sort(palavras);
+		System.out.println(palavras);
+		
+	}
+}
+class ComparadorPorTamanho implements Comparator<String>{
+
+	@Override
+	public int compare(String arg0, String arg1) {
+
+		if (arg0.length() < arg1.length()) 
+			return -1;
+		if(arg1.length() < arg0.length())
+			return 1;
+		
+		return 0;
+	}
+	
+	
+}
