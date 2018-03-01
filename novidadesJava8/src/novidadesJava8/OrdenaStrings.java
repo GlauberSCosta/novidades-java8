@@ -14,7 +14,7 @@ public class OrdenaStrings {
 		palavras.add("crossfit");
 		palavras.add("crossfit open games ");
 		
-//		Comparator<String> comparador = new ComparadorPorTamanho();
+		Comparator<String> comparador = new ComparadorPorTamanho();
 		
 //		Collections.sort(palavras, comparador);
 		
